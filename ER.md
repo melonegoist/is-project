@@ -1,3 +1,5 @@
+# ER-диаграмма базы данных фотошколы
+
 ```mermaid
 erDiagram
     users ||--o{ profiles : has
@@ -106,5 +108,4 @@ erDiagram
         timestamp sent_at
         varchar message_type
     }
-
-```mermaid
+```
