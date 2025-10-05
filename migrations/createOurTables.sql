@@ -1,3 +1,12 @@
+create type role_enum as enum ('Admin','User','Teacher');
+create type courses_types_enum as enum ('Online','Ofline','Hybrid');
+create type courses_skill_levels_enum as enum ('Begginer','Intermediate','Advanced');
+create type courses_statuses_enum as enum ('Staring the course','Completing the course','Course completed');
+create type profiles_skill_level_enum as enum ('Juniour','Middle','Seniour');
+create type courses_status_enum as enum ('Published','Recently updated','Closed');
+create type payment_currency_enum as enum ('RUB','EUR','USD');
+
+
 CREATE TABLE USERS(
     user_id SERIAL PRIMARY KEY ,
     email VARCHAR(30) NOT NULL ,
@@ -94,10 +103,3 @@ CREATE TABLE EQUIPMENT_RENTALS(
     status VARCHAR(100),
     created_at TIMEStamp
 );
-create type role_enum as enum ('Admin','User','Teacher');
-create type courses_types_enum as enum ('Online','Ofline','Hybrid');
-create type courses_skill_levels_enum as enum ('Begginer','Intermediate','Advanced');
-create type courses_statuses_enum as enum ('Staring the course','Completing the course','Course completed');
-create type profiles_skill_level_enum as enum ('Juniour','Middle','Seniour');
-create type courses_status_enum as enum ('Published','Recently updated','Closed');
-create type payment_currency_enum as enum ('RUB','EUR','USD');
